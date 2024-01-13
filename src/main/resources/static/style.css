@@ -93,7 +93,7 @@ p {
     line-height: 1.6;
     max-width: 800px;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
     color: #ccc;
 }
 
@@ -167,11 +167,38 @@ p {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Ușoară umbră pentru efect vizual */
 }
 
+#gdpr {
+    background-color: #222; /* Culoarea de fundal pentru secțiune */
+    padding: 30px; /* Spațierea între conținut și marginea chenarului */
+    margin: 20px auto; /* Spațierea între chenar și alte elemente */
+    max-width: 800px; /* Lățimea maximă a chenarului */
+    border-radius: 10px; /* Colțuri rotunjite pentru chenar */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Ușoară umbră pentru efect vizual */
+}
+
 #despre h2 {
     color: #61dafb; /* Culoarea titlului */
 }
 
+#gdpr h2 {
+    color: #61dafb; /* Culoarea titlului */
+}
+
 #despre p {
+    color: #fff; /* Culoarea textului */
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px; /* Spațiere între text și butonul "Vezi mai multe" */
+}
+
+#gdpr p {
+    color: #fff; /* Culoarea textului */
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px; /* Spațiere între text și butonul "Vezi mai multe" */
+}
+
+#contact p {
     color: #fff; /* Culoarea textului */
     font-size: 18px;
     line-height: 1.6;
@@ -199,6 +226,54 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+#contact {
+    background-color: #222; /* Culoarea de fundal pentru secțiune */
+    padding: 30px; /* Spațierea între conținut și marginea chenarului */
+    margin: 20px auto; /* Spațierea între chenar și alte elemente */
+    max-width: 800px; /* Lățimea maximă a chenarului */
+    border-radius: 10px; /* Colțuri rotunjite pentru chenar */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Ușoară umbră pentru efect vizual */
+}
+
+#contact h2 {
+    color: #61dafb;
+    text-align: center;
+    font-size: 24px;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    border-radius: 5px;
+}
+
+#contact button {
+    background-color: #61dafb;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #4fa3d1;
 }
 
 

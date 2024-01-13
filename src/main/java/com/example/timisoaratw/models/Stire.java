@@ -5,7 +5,7 @@ public class Stire {
     private String descriere;
     private String data;
 
-    public Stire(String nume, String descriere, String data) {
+    public Stire(String nume, String data, String descriere) {
         this.nume = nume;
         this.descriere = descriere;
         this.data = data;

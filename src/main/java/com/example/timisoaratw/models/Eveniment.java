@@ -5,7 +5,7 @@ public class Eveniment {
     private String descriere;
     private String data;
 
-    public Eveniment(String nume, String descriere, String data) {
+    public Eveniment(String nume, String data, String descriere) {
         this.nume = nume;
         this.descriere = descriere;
         this.data = data;

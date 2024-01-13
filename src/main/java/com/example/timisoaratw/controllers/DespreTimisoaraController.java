@@ -5,6 +5,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class DespreTimisoaraController {
+    private static final String DB_URL = "jdbc:oracle:thin:@localhost:1521:xe";
+    private static final String DB_USER = "SYSTEM";
+    private static final String DB_PASSWORD = "db";
     @GetMapping("/despre")
     public String despre() {
         return "despreTimisoara";

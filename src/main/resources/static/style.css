@@ -4,6 +4,7 @@ body {
     font-family: 'Nunito', sans-serif; /* Schimbă 'Nunito' cu fontul ales de tine */
     background-color: #1a1a1a;
     color: #b4b4b4; /* Culoarea textului */
+    margin-bottom: 50px; /* Asigură spațiu pentru a nu acoperi conținutul de către footer */
 }
 
 header {
@@ -190,6 +191,16 @@ p {
 .btn-vezi-mai-multe:hover {
     background-color: #4fa3d1; /* Culoarea butonului la hover */
 }
+footer {
+    background-color: #333; /* Culoarea de fundal pentru footer */
+    color: #fff; /* Culoarea textului din footer */
+    text-align: right;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
 
 @media screen and (max-width: 600px) {
     nav {

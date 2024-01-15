@@ -12,13 +12,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Controller
-public class HomeController {
+public class AdminLoggedController {
     private static final String DB_URL = "jdbc:oracle:thin:@localhost:1521:xe";
     private static final String DB_USER = "SYSTEM";
     private static final String DB_PASSWORD = "db";
 
-    @GetMapping("/")
-    public String home(Model model) {
+    @GetMapping("/adminlogged")
+    public String adminlogged(Model model) {
         List<Stire> stiri = new ArrayList<>();
         List<Eveniment> evenimente = new ArrayList<>();
 
@@ -57,6 +57,6 @@ public class HomeController {
 
         model.addAttribute("stiri", stiri);
         model.addAttribute("evenimente", evenimente);
-        return "home";
+        return "adminlogged";
     }
 }

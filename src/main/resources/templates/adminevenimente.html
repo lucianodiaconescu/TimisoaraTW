@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timișoara - Capitală Culturală Europeană 2023</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style1.css">
 </head>
 <body>
 <header>
@@ -60,8 +60,9 @@
     <textarea id="descriere" name="descriere" required th:text="${evenimentToEdit?.descriere}"></textarea><br>
 
     <div th:if="${evenimentToEdit == null}">
-        <input type="submit" value="Adaugă Eveniment">
+        <input type="submit" class="button-add" value="Adaugă Eveniment">
     </div>
+
     <div th:if="${evenimentToEdit != null}">
         <input type="hidden" name="oldNume" th:value="${evenimentToEdit?.nume}">
         <button type="submit" name="action" value="update">Actualizează Eveniment</button>

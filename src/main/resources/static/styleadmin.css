@@ -1,0 +1,289 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif; /* Schimbă 'Nunito' cu fontul ales de tine */
+    background-color: #1a1a1a;
+    color: #b4b4b4; /* Culoarea textului */
+    margin-bottom: 50px; /* Asigură spațiu pentru a nu acoperi conținutul de către footer */
+}
+
+header {
+    background-color: #121212;
+    padding: 15px;
+    text-align: center;
+    color: #61dafb;
+    font-size: 28px; /* Mărește mărimea fontului */
+}
+
+nav {
+    background-color: #121212;
+    padding: 10px 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    font-size: 18px; /* Mărește mărimea fontului pentru butoane */
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #61dafb;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #121212;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px; /* Mărește mărimea fontului pentru butonul More */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #121212;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    color: #61dafb;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+h1 {
+    color: #61dafb;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 36px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    color: #ccc;
+}
+
+#news {
+    background-color: #292929;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#news h2 {
+    color: #61dafb;
+    text-align: center;
+    font-size: 24px;
+}
+
+#news ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Afiseaza cate 3 coloane pe rand */
+    gap: 20px; /* Adauga spatiu intre coloane si randuri */
+}
+
+#news li {
+    border-bottom: 1px solid #444;
+    padding: 10px;
+    margin: 0;
+}
+
+#evenimente {
+    background-color: #292929;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#evenimente h2 {
+    color: #61dafb;
+    text-align: center;
+    font-size: 24px;
+}
+
+#evenimente ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Afiseaza cate 3 coloane pe rand */
+    gap: 20px; /* Adauga spatiu intre coloane si randuri */
+}
+
+#evenimente li {
+    border-bottom: 1px solid #444;
+    padding: 10px;
+    margin: 0;
+}
+
+
+#despre {
+    background-color: #222; /* Culoarea de fundal pentru secțiune */
+    padding: 30px; /* Spațierea între conținut și marginea chenarului */
+    margin: 20px auto; /* Spațierea între chenar și alte elemente */
+    max-width: 800px; /* Lățimea maximă a chenarului */
+    border-radius: 10px; /* Colțuri rotunjite pentru chenar */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Ușoară umbră pentru efect vizual */
+}
+
+#gdpr {
+    background-color: #222; /* Culoarea de fundal pentru secțiune */
+    padding: 30px; /* Spațierea între conținut și marginea chenarului */
+    margin: 20px auto; /* Spațierea între chenar și alte elemente */
+    max-width: 800px; /* Lățimea maximă a chenarului */
+    border-radius: 10px; /* Colțuri rotunjite pentru chenar */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Ușoară umbră pentru efect vizual */
+}
+
+#despre h2 {
+    color: #61dafb; /* Culoarea titlului */
+}
+
+#gdpr h2 {
+    color: #61dafb; /* Culoarea titlului */
+}
+
+#despre p {
+    color: #fff; /* Culoarea textului */
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px; /* Spațiere între text și butonul "Vezi mai multe" */
+}
+
+#gdpr p {
+    color: #fff; /* Culoarea textului */
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px; /* Spațiere între text și butonul "Vezi mai multe" */
+}
+
+#contact p {
+    color: #fff; /* Culoarea textului */
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px; /* Spațiere între text și butonul "Vezi mai multe" */
+}
+
+.btn-vezi-mai-multe {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #61dafb; /* Culoarea butonului */
+    color: #fff; /* Culoarea textului butonului */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Tranzitie pentru efect vizual la hover */
+}
+
+.btn-vezi-mai-multe:hover {
+    background-color: #4fa3d1; /* Culoarea butonului la hover */
+}
+footer {
+    background-color: #333; /* Culoarea de fundal pentru footer */
+    color: #fff; /* Culoarea textului din footer */
+    text-align: right;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#contact {
+    background-color: #222; /* Culoarea de fundal pentru secțiune */
+    padding: 30px; /* Spațierea între conținut și marginea chenarului */
+    margin: 20px auto; /* Spațierea între chenar și alte elemente */
+    max-width: 800px; /* Lățimea maximă a chenarului */
+    border-radius: 10px; /* Colțuri rotunjite pentru chenar */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Ușoară umbră pentru efect vizual */
+}
+
+#contact h2 {
+    color: #61dafb;
+    text-align: center;
+    font-size: 24px;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    border-radius: 5px;
+}
+
+#contact button {
+    background-color: #61dafb;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #4fa3d1;
+}
+
+
+@media screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    a, .dropbtn {
+        margin: 5px 0;
+    }
+}

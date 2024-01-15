@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timișoara - Capitală Culturală Europeană 2023</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 <body>
 <header>
@@ -69,8 +70,41 @@
     <br>
     <a href="stiri" class="btn-vezi-mai-multe">Vezi toate știrile</a>
 </section>
+<section id="chat">
+    <h2>Chat cu OpenAI</h2>
+    <input type="text" id="question" placeholder="Introdu o întrebare...">
+    <button onclick="askQuestion()">Trimite întrebarea</button>
+    <div id="answer"></div>
+</section>
+<script>
+    function askQuestion() {
+        var prompt = $("#question").val();
+
+        // Modificarea aici pentru a potrivi formatul dorit
+        var requestBody = {
+            model: "text-davinci-002",
+            messages: [{ role: 'system', content: prompt }],
+        };
+
+        $.ajax({
+            type: "POST",
+            url: "/chat",
+            contentType: "application/json",
+            data: JSON.stringify(requestBody),
+            success: function (response) {
+                var content = JSON.parse(response).choices[0].message.content;
+                $("#answer").text(content);
+            },
+            error: function (error) {
+                console.log("Error:", error);
+            }
+        });
+    }
+</script>
+
 
 </body>
+<br>
 <footer>Timisoara Capitala Cultural Europeana 2023</footer>
 
 </html>

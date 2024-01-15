@@ -25,6 +25,7 @@
         <th>Nume</th>
         <th>Data</th>
         <th>Descriere</th>
+        <th>Acțiuni</th>
     </tr>
     </thead>
     <tbody>
@@ -32,8 +33,39 @@
         <td th:text="${eveniment.nume}"></td>
         <td th:text="${eveniment.data}"></td>
         <td th:text="${eveniment.descriere}"></td>
+        <td>
+            <form action="/adminevenimente/delete" method="post">
+                <input type="hidden" name="nume" th:value="${eveniment.nume}">
+                <button type="submit">Șterge</button>
+            </form>
+            <form action="/adminevenimente/edit" method="get">
+                <input type="hidden" name="nume" th:value="${eveniment.nume}">
+                <button type="submit">Editează</button>
+            </form>
+        </td>
     </tr>
     </tbody>
 </table>
+
+<!-- Form Section -->
+<h2>Adaugă/Editează Eveniment:</h2>
+<form action="/adminevenimente" method="post">
+    <label for="nume">Nume:</label>
+    <input type="text" id="nume" name="nume" required th:value="${evenimentToEdit?.nume}"><br>
+
+    <label for="data">Data:</label>
+    <input type="text" id="data" name="data" required th:value="${evenimentToEdit?.data}"><br>
+
+    <label for="descriere">Descriere:</label>
+    <textarea id="descriere" name="descriere" required th:text="${evenimentToEdit?.descriere}"></textarea><br>
+
+    <div th:if="${evenimentToEdit == null}">
+        <input type="submit" value="Adaugă Eveniment">
+    </div>
+    <div th:if="${evenimentToEdit != null}">
+        <input type="hidden" name="oldNume" th:value="${evenimentToEdit?.nume}">
+        <button type="submit" name="action" value="update">Actualizează Eveniment</button>
+    </div>
+</form>
 </body>
 </html>

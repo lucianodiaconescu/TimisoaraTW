@@ -25,15 +25,47 @@
         <th>Nume</th>
         <th>Data</th>
         <th>Descriere</th>
+        <th>Acțiuni</th>
     </tr>
     </thead>
     <tbody>
-    <tr th:each="eveniment : ${evenimente}">
-        <td th:text="${eveniment.nume}"></td>
-        <td th:text="${eveniment.data}"></td>
-        <td th:text="${eveniment.descriere}"></td>
+    <tr th:each="stire : ${stiri}">
+        <td th:text="${stire.nume}"></td>
+        <td th:text="${stire.data}"></td>
+        <td th:text="${stire.descriere}"></td>
+        <td>
+            <form action="/adminstiri/delete" method="post">
+                <input type="hidden" name="nume" th:value="${stire.nume}">
+                <button type="submit">Șterge</button>
+            </form>
+            <form action="/adminstiri/edit" method="get">
+                <input type="hidden" name="nume" th:value="${stire.nume}">
+                <button type="submit">Editează</button>
+            </form>
+        </td>
     </tr>
     </tbody>
 </table>
+
+<!-- Form Section -->
+<h2>Adaugă/Editează Stire:</h2>
+<form action="/adminstiri" method="post">
+    <label for="nume">Nume:</label>
+    <input type="text" id="nume" name="nume" required th:value="${stireToEdit?.nume}"><br>
+
+    <label for="data">Data:</label>
+    <input type="text" id="data" name="data" required th:value="${stireToEdit?.data}"><br>
+
+    <label for="descriere">Descriere:</label>
+    <textarea id="descriere" name="descriere" required th:text="${stireToEdit?.descriere}"></textarea><br>
+
+    <div th:if="${stireToEdit == null}">
+        <input type="submit" value="Adaugă Stire">
+    </div>
+    <div th:if="${stireToEdit != null}">
+        <input type="hidden" name="oldNume" th:value="${stireToEdit?.nume}">
+        <button type="submit" name="action" value="update">Actualizează Stire</button>
+    </div>
+</form>
 </body>
 </html>

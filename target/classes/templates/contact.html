@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timișoara - Capitală Culturală Europeană 2023</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header>
+    Timișoara - Capitală Culturală Europeană 2023 - Contact
+</header>
+<nav>
+    <ul>
+        <li><a href="http://localhost:8080">Acasa</a></li>
+        <li><a href="stiri">Stiri</a></li>
+        <li><a href="evenimente">Evenimente</a></li>
+        <li><a href="despre">Despre Timisoara</a></li>
+        <li class="dropdown">
+            <button class="dropbtn">More</button>
+            <div class="dropdown-content">
+                <a href="gdpr">GDPR</a>
+                <a href="contact">Contact</a>
+                <a href="politicaconfidentialitate">Politica de confidetialitate</a>
+            </div>
+        </li>
+    </ul>
+</nav>
+<div class="placeholder"></div>
+<section id="contact">
+    <div class="chenar">
+        <h2>Contact</h2>
+        <p>Pentru orice întrebări sau informații suplimentare, vă rugăm să ne contactați folosind formularul de mai jos sau prin informațiile de contact disponibile.</p>
+        <p>In cazul in care cunoasteti o stire noua care inca nu a aparut pe pagina sau doriti detalii suplimentare despre un eveniment va rugam sa ne lasati un mesaj si noi ne vom ocupa.</p>
+        <form action="/contact" method="post">
+            <label for="nume">Nume si prenume:</label>
+            <input type="text" id="nume" name="nume" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mesaj">Mesaj:</label>
+            <textarea id="mesaj" name="mesaj" rows="4" required></textarea>
+
+            <button type="submit">Trimite</button>
+        </form>
+        <br>
+        <p>Sau ne puteți contacta la adresa de email:<a href="mailto:contact@timisoara2023.ro">timisoara@e-uvt.ro</a></p>
+    </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,703 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #ffd700;
+    margin-bottom: 50px;
+    background-image: url('/poze/f1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, li, span {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+header {
+    background-color: #ffd700;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+nav {
+    background-color: #ffd700;
+    position: fixed;
+    left: 0;
+    top: 72px;
+    width: 100vw;
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+.placeholder{
+    height: 150px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+li {
+    text-align: center;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 5px 20px;
+    display: inline-flex;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+ul:hover li a {
+    color: #0002;
+}
+
+ul li:hover a {
+    color: #000;
+    background: transparent;
+    letter-spacing: 5px;
+    transition: letter-spacing 0.5s, left 0.5s;
+    text-transform: uppercase;
+}
+
+ul li a:hover:before {
+    content: attr(data-text);
+    opacity: 1;
+    left: 50%;
+    letter-spacing: 10px;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #ffd700;
+    color: #000000;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fbfbfb;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    color: #002aff;
+    background-color: #333;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+h1 {
+    color: #ffffff;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 36px;
+    background-color: #000;
+    border-radius: 5px;
+    padding: left 10px;;
+}
+h2 {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: left;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    a, .dropbtn {
+        margin: 5px 0;
+    }
+}
+
+tbody td {
+    background-color: rgba(255, 255, 255, 0);
+    transition: all 0.2s linear;
+    transition-delay: 0.3s, 0s;
+    opacity: 0.6;
+}
+
+tbody tr:hover td {
+    background-color: rgba(255, 255, 255, 1);
+    transition-delay: 0s, 0s;
+    opacity: 1;
+    font-size: 2em;
+}
+
+td {
+    transform-origin: center left;
+    transition-property: transform;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+}
+
+tr:hover td {
+    transform: scale(1.1);
+}
+table {
+    width: 90%;
+    margin: 0 5%;
+    text-align: left;
+}
+th, td {
+    padding: 0.5em;
+}
+
+
+#news {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+#news:hover {
+    background-color: #ffecb3;
+}
+
+#news h2 {
+    color: #fbbd08; /* Galben inchis */
+    text-align: center;
+    font-size: 24px;
+    transition: color 0.3s ease; /* Efect de tranziție la schimbarea culorii textului */
+}
+
+#news:hover h2 {
+    color: #e65100; /* Galben mai intens la hover */
+}
+
+#news ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+#news li {
+    border-bottom: 1px solid #444;
+    padding: 10px;
+    margin: 0;
+    transition: background-color 0.3s ease; /* Efect de tranziție la schimbarea culorii de fundal */
+}
+
+#news li:hover {
+    background-color: #ffecb3; /* Galben deschis la hover */
+}
+#evenimente {
+    background-color: #fff; /* Alb */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease; /* Efect de tranziție la schimbarea culorii de fundal */
+}
+
+#evenimente:hover {
+    background-color: #ffecb3; /* Galben deschis la hover */
+}
+
+#evenimente h2 {
+    color: #fbbd08; /* Galben inchis */
+    text-align: center;
+    font-size: 24px;
+    transition: color 0.3s ease; /* Efect de tranziție la schimbarea culorii textului */
+}
+
+#evenimente:hover h2 {
+    color: #e65100; /* Galben mai intens la hover */
+}
+
+#evenimente ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+#evenimente li {
+    border-bottom: 1px solid #444;
+    padding: 10px;
+    margin: 0;
+    transition: background-color 0.3s ease; /* Efect de tranziție la schimbarea culorii de fundal */
+}
+
+#evenimente li:hover {
+    background-color: #ffecb3; /* Galben deschis la hover */
+}
+
+#despre {
+    background-color: #fff; /* Alb */
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease; /* Efect de tranziție la schimbarea culorii de fundal */
+}
+
+#despre:hover {
+    background-color: #fbbd08; /* Galben deschis la hover */
+}
+
+#despre h2 {
+    color: #fbbd08; /* Galben inchis pentru titlu */
+    transition: color 0.3s ease; /* Efect de tranziție la schimbarea culorii textului */
+}
+
+#despre:hover h2 {
+    color: #e65100; /* Galben mai intens la hover */
+}
+
+#despre p {
+    color: #444; /* Culoarea textului */
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#despre a {
+    color: #000000; /* Culoarea link-urilor */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Efect de tranziție la schimbarea culorii link-urilor */
+}
+
+#despre a:hover {
+    color: #fbbd08; /* Galben mai intens la hover */
+}
+
+#locatii {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+#locatii h2 {
+    color: #000; /* Negru pentru culoare */
+    margin-top: 20px; /* Spațierea de sus */
+    margin-bottom: 10px; /* Spațierea de jos */
+}
+
+.card {
+    background-color: #aaaaaa;
+    padding: 20px;
+    color: #ffffff;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Efect de tranziție pentru transformare la hover */
+    overflow: hidden;
+    position: relative;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efect de mărire la hover */
+}
+
+.card h3 {
+    color: #fffb00;
+}
+
+.card p {
+    color: #ffffff;
+}
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    filter: brightness(50%);
+    transition: filter 0.3s ease;
+}
+
+.card:hover::before {
+    filter: brightness(100%);
+}
+
+.card[data-image="parculcentral.jpg"]::before {
+    background-image: url('poze/parculcentraltimisoara.jpeg');
+}
+
+.card[data-image="piataunirii.jpg"]::before {
+    background-image: url('poze/piataUniri.jpg');
+}
+
+.card[data-image="muzeulbanatului.jpg"]::before {
+    background-image: url('poze/muzeubanat.jpg');
+}
+.card[data-image="catedralaorthodoxa.jpg"]::before {
+    background-image: url('poze/catedrala.jpg');
+}
+
+#gdpr {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#gdpr h2 {
+    color: #fbbd08; /* Galben deschis pentru titlu */
+}
+
+#gdpr p {
+    color: #000000; /* Alb pentru text */
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px; /* Spațiere între text și butonul "Vezi mai multe" */
+}
+
+.btn-vezi-mai-multe {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #000000; /* Culoarea textului butonului */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: right;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+#contact {
+    background-color: #fff;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+#contact h2 {
+    color: #61dafb;
+    text-align: center;
+    font-size: 24px;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact p {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#contact button {
+    background-color: #61dafb;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #4fa3d1;
+}
+
+
+
+
+table {
+    width: 90%;
+    margin: 0 5%;
+    text-align: left;
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+span {
+    color: black;
+}
+
+
+
+thead th, tbody td {
+    padding: 15px;
+}
+
+thead th {
+    background-color: #ffd700;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 2px solid #ddd;
+}
+
+tbody td {
+    background-color: transparent;
+    color: #333;
+    transition: all 0.2s linear;
+}
+
+tbody tr:hover td {
+    background-color: #ffd700;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+td {
+    transition: transform 0.4s;
+}
+
+tbody tr:hover td {
+    transform: scale(1.05);
+}
+
+
+form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+label {
+    font-size: 16px;
+    margin-right: 10px;
+    color: #333;
+}
+
+#nume {
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+
+#evenimenteTableBody tr {
+    transition: background-color 0.3s;
+}
+
+#evenimenteTableBody tr:hover {
+    background-color: #f5f5f5;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+#searchBar {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+table {
+    width: 80%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+#chat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to right, #29293a, #536976);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#chat h2 {
+    color: #66c2ff;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#question {
+    padding: 15px;
+    width: 60%;
+    border: 2px solid #66c2ff;
+    border-radius: 8px;
+    font-size: 18px;
+    outline: none;
+    background: #373742;
+    color: #fff;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#question:focus {
+    border-color: #45a049;
+    box-shadow: 0 0 10px rgba(69, 160, 73, 0.5);
+}
+
+.askgpt {
+    padding: 15px 30px;
+    background: linear-gradient(to right, #66c2ff, #4eadeb);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s ease;
+}
+
+.askgpt:hover {
+    background: linear-gradient(to right, #4eadeb, #66c2ff);
+}
+
+#answer {
+    padding: 15px;
+    border: 2px solid #66c2ff;
+    border-radius: 8px;
+    background: #373742;
+    font-size: 20px;
+    max-width: 100%;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}

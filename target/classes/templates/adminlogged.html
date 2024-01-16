@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timișoara - Capitală Culturală Europeană 2023</title>
+    <link rel="stylesheet" type="text/css" href="styleadmin.css">
+</head>
+<body>
+<header>
+    Timișoara - Capitală Culturală Europeană 2023
+</header>
+
+<nav>
+    <ul>
+        <li><a href="adminlogged">Acasa</a></li>
+        <li><a href="adminstiri">Stiri</a></li>
+        <li><a href="adminevenimente">Evenimente</a></li>
+        <li><a href="adminmesaje">Mesaje de la useri</a></li>
+    </ul>
+</nav>
+
+<h1>Admin</h1>
+
+<section id="evenimente">
+    <h2>Ultimele Evenimente</h2>
+    <ul>
+        <th:block th:each="eveniment : ${evenimente}">
+            <li>
+                <strong th:text="${eveniment.data}"></strong>
+                <span th:text="${eveniment.nume}"></span>
+                <span th:text="${eveniment.descriere}"></span>
+            </li>
+        </th:block>
+    </ul>
+    <br>
+    <a href="adminevenimente" class="btn-vezi-mai-multe">Vezi toate evenimentele</a>
+</section>
+
+<section id="news">
+    <h2>Ultimele Știri</h2>
+    <ul>
+        <th:block th:each="stire : ${stiri}">
+            <li>
+                <strong th:text="${stire.data}"></strong>
+                <span th:text="${stire.nume}"></span>
+                <span th:text="${stire.descriere}"></span>
+            </li>
+        </th:block>
+    </ul>
+    <br>
+    <a href="adminstiri" class="btn-vezi-mai-multe">Vezi toate știrile</a>
+</section>
+
+<section id="messages">
+    <h2>Ultimele Mesaje</h2>
+    <ul>
+        <th:block th:each="mesaj : ${mesaje}">
+            <li>
+                <strong th:text="${mesaj['nume']}"></strong>
+                <span th:text="${mesaj['email']}"></span>
+                <span th:text="${mesaj['mesaj']}"></span>
+            </li>
+        </th:block>
+    </ul>
+    <br>
+    <a href="adminmesaje" class="btn-vezi-mai-multe">Vezi toate mesajele</a>
+</section>
+
+
+</body>
+<a href="admin" class="btn-vezi-mai-multe">Delogheaza-te!</a>
+<footer>Timisoara Capitala Cultural Europeana 2023</footer>
+
+</html>

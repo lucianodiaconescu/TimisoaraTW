@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="719a6e06-669b-4f52-a07e-536d6d9c0430" name="Changes" comment="Commit">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/TimisoaraTW-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/TimisoaraTW-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/timisoaratw/TimisoaraTwApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/timisoaratw/controllers/AdminController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/timisoaratw/controllers/AdminEvenimenteController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/timisoaratw/controllers/AdminLoggedController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/timisoaratw/controllers/AdminMesajeController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/timisoaratw/controllers/AdminStiriController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/timisoaratw/controllers/ContactController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/timisoaratw/controllers/DespreTimisoaraController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/timisoaratw/controllers/EvenimenteController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/timisoaratw/controllers/GdprController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/timisoaratw/controllers/HomeController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/timisoaratw/controllers/PoliticaController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/timisoaratw/controllers/StiriController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/timisoaratw/models/Eveniment.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/timisoaratw/models/Stire.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/poze/catedrala.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/poze/f1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/poze/f2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/poze/logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/poze/muzeubanat.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/poze/parculcentraltimisoara.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/poze/piataUniri.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/style1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/styleadmin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/admin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/adminevenimente.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/adminlogged.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/adminmesaje.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/adminstiri.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/contact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/despreTimisoara.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/evenimente.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/gdpr.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/politicaconfidentialitate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/stiri.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.timisoaratw.TimisoaraTwApplicationTests.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.timisoaratw.TimisoaraTwApplicationTests.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/example/timisoaratw/TimisoaraTwApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/timisoaratw/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/timisoaratw/controllers/HomeController.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="28f0234a-47c1-4382-a060-9f4b742ccacd" />
+        <option name="url" value="https://github.com/lucianodiaconescu/TimisoaraTW" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2arhPrcjDTmHJUOUvMctrm3GNoU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Luciano/Desktop/ojdbc6-11.2.0.3.jar",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "spring.configuration.checksum": "f02036ea5db561ada7adc10509ddb919",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Luciano\Desktop\TimisoaraTW\src\main\resources\static" />
+      <recent name="C:\Users\Luciano\Desktop\TimisoaraTW\src\main\resources\Poze" />
+      <recent name="C:\Users\Luciano\Desktop\TimisoaraTW\src\main\resources\photo" />
+      <recent name="C:\Users\Luciano\Desktop\TimisoaraTW\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="TimisoaraTwApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-19" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <module name="TimisoaraTW" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.timisoaratw.TimisoaraTwApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="719a6e06-669b-4f52-a07e-536d6d9c0430" name="Changes" comment="" />
+      <created>1705082587919</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1705082587919</updated>
+      <workItem from="1705082588095" duration="3966000" />
+      <workItem from="1705101230903" duration="14050000" />
+      <workItem from="1705254387118" duration="800000" />
+      <workItem from="1705263071174" duration="17109000" />
+      <workItem from="1705364376643" duration="745000" />
+      <workItem from="1705365186097" duration="300000" />
+      <workItem from="1705365518485" duration="554000" />
+      <workItem from="1705399122794" duration="1274000" />
+      <workItem from="1705404384233" duration="1131000" />
+      <workItem from="1705405543795" duration="10735000" />
+    </task>
+    <task id="LOCAL-00001" summary="Commit">
+      <created>1705104803666</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1705104803666</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Commit">
+      <created>1705110027930</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1705110027930</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Commit">
+      <created>1705111983400</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1705111983400</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Commit">
+      <created>1705160383762</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1705160383762</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Commit">
+      <created>1705277386734</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1705277386734</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Commit">
+      <created>1705327191775</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1705327191775</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Commit">
+      <created>1705327975205</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1705327975205</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Commit">
+      <created>1705335698496</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1705335698496</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Commit">
+      <created>1705339271782</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1705339271783</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Commit">
+      <created>1705415532876</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1705415532876</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Commit">
+      <created>1705429063293</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1705429063293</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/TimisoaraTW$TimisoaraTwApplication.ic" NAME="TimisoaraTwApplication Coverage Results" MODIFIED="1705410185662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

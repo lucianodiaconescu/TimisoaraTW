@@ -1,0 +1,14 @@
+com\example\timisoaratw\controllers\DespreTimisoaraController.class
+com\example\timisoaratw\controllers\StiriController.class
+com\example\timisoaratw\controllers\EvenimenteController.class
+com\example\timisoaratw\controllers\AdminLoggedController.class
+com\example\timisoaratw\controllers\AdminController.class
+com\example\timisoaratw\models\Stire.class
+com\example\timisoaratw\controllers\GdprController.class
+com\example\timisoaratw\controllers\PoliticaController.class
+com\example\timisoaratw\models\Eveniment.class
+com\example\timisoaratw\controllers\AdminEvenimenteController.class
+com\example\timisoaratw\controllers\AdminStiriController.class
+com\example\timisoaratw\TimisoaraTwApplication.class
+com\example\timisoaratw\controllers\HomeController.class
+com\example\timisoaratw\controllers\ContactController.class

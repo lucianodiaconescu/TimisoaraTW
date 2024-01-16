@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timișoara - Capitală Culturală Europeană 2023</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+<header>
+    Timișoara - Capitală Culturală Europeană 2023
+</header>
+
+<nav>
+    <ul>
+        <li><a href="http://localhost:8080">Acasa</a></li>
+        <li><a href="stiri">Stiri</a></li>
+        <li><a href="evenimente">Evenimente</a></li>
+        <li><a href="despre">Despre Timisoara</a></li>
+        <li class="dropdown">
+            <button class="dropbtn">More</button>
+            <div class="dropdown-content">
+                <a href="gdpr">GDPR</a>
+                <a href="contact">Contact</a>
+                <a href="politicaconfidentialitate">Politica de confidetialitate</a>
+            </div>
+        </li>
+    </ul>
+</nav>
+<div class="placeholder"></div>
+
+<h1>Bine ați venit în orașul care strălucește cultural!</h1>
+
+<section id="evenimente">
+    <h2>Ultimele Evenimente</h2>
+    <ul>
+        <th:block th:each="eveniment : ${evenimente}">
+            <li>
+                <strong th:text="${eveniment.data}"></strong>
+                <span th:text="${eveniment.nume}"></span>
+                <span th:text="${eveniment.descriere}"></span>
+            </li>
+        </th:block>
+    </ul>
+    <br>
+    <a href="evenimente" class="btn-vezi-mai-multe">Vezi toate evenimentele</a>
+</section>
+
+<section id="despre">
+    <div class="chenar">
+        <h2>Despre Timisoara</h2>
+        <p>Aflați mai multe detalii despre frumoasa noastră Timișoara, capitala culturală europeană.</p>
+        <a href="despre" class="btn-vezi-mai-multe">Vezi mai multe</a>
+    </div>
+</section>
+
+<section id="news">
+    <h2>Ultimele Știri</h2>
+    <ul>
+        <th:block th:each="stire : ${stiri}">
+            <li>
+                <strong th:text="${stire.data}"></strong>
+                <span th:text="${stire.nume}"></span>
+                <span th:text="${stire.descriere}"></span>
+            </li>
+        </th:block>
+    </ul>
+    <br>
+    <a href="stiri" class="btn-vezi-mai-multe">Vezi toate știrile</a>
+</section>
+<section id="chat">
+    <h2>Pune o intrebare:</h2>
+    <input type="text" id="question" placeholder="Introdu o întrebare...">
+    <button class ="askgpt" onclick="askQuestion()">Trimite întrebarea</button>
+    <br>
+    <div id="answer"></div>
+</section>
+<script>
+    function askQuestion() {
+        var prompt = $("#question").val();
+        var requestBody = {
+            model: "text-davinci-002",
+            messages: [{ role: 'system', content: prompt }],
+        };
+        $.ajax({
+            type: "POST",
+            url: "/chat",
+            contentType: "application/json",
+            data: JSON.stringify(requestBody),
+            success: function (response) {
+                var content = JSON.parse(response).choices[0].message.content;
+                $("#answer").text(content);
+            },
+            error: function (error) {
+                console.log("Error:", error);
+            }
+        });
+    }
+</script>
+
+
+</body>
+<br><br><br><br>
+<footer>Timisoara Capitala Cultural Europeana 2023</footer>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timișoara - Capitală Culturală Europeană 2023</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+<header>
+    Timișoara - Capitală Culturală Europeană 2023 - Evenimente
+</header>
+<nav>
+    <ul>
+        <li><a href="adminlogged">Acasa</a></li>
+        <li><a href="adminstiri">Stiri</a></li>
+        <li><a href="adminevenimente">Evenimente</a></li>
+        <li><a href="adminmesaje">Mesaje de la useri</a></li>
+    </ul>
+</nav>
+<h2>Evenimente:</h2>
+<table border="1">
+    <thead>
+    <tr>
+        <th>Nume</th>
+        <th>Data</th>
+        <th>Descriere</th>
+        <th>Acțiuni</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="eveniment : ${evenimente}">
+        <td th:text="${eveniment.nume}"></td>
+        <td th:text="${eveniment.data}"></td>
+        <td th:text="${eveniment.descriere}"></td>
+        <td>
+            <form action="/adminevenimente/delete" method="post">
+                <input type="hidden" name="nume" th:value="${eveniment.nume}">
+                <button type="submit">Șterge</button>
+            </form>
+            <form action="/adminevenimente/edit" method="get">
+                <input type="hidden" name="nume" th:value="${eveniment.nume}">
+                <button type="submit">Editează</button>
+            </form>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<h2>Adaugă/Editează Eveniment:</h2>
+<form action="/adminevenimente" method="post">
+    <label for="nume">Nume:</label>
+    <input type="text" id="nume" name="nume" required th:value="${evenimentToEdit?.nume}"><br>
+
+    <label for="data">Data:</label>
+    <input type="text" id="data" name="data" required th:value="${evenimentToEdit?.data}"><br>
+
+    <label for="descriere">Descriere:</label>
+    <textarea id="descriere" name="descriere" required th:text="${evenimentToEdit?.descriere}"></textarea><br>
+
+    <div th:if="${evenimentToEdit == null}">
+        <input type="submit" class="button-add" value="Adaugă Eveniment">
+    </div>
+
+    <div th:if="${evenimentToEdit != null}">
+        <input type="hidden" name="oldNume" th:value="${evenimentToEdit?.nume}">
+        <button type="submit" name="action" value="update">Actualizează Eveniment</button>
+    </div>
+</form>
+</body>
+</html>

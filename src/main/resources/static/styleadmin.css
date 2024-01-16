@@ -1,10 +1,10 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Nunito', sans-serif; /* Schimbă 'Nunito' cu fontul ales de tine */
+    font-family: 'Nunito', sans-serif;
     background-color: #1a1a1a;
-    color: #b4b4b4; /* Culoarea textului */
-    margin-bottom: 50px; /* Asigură spațiu pentru a nu acoperi conținutul de către footer */
+    color: #b4b4b4;
+    margin-bottom: 50px;
 }
 
 header {
@@ -12,7 +12,7 @@ header {
     padding: 15px;
     text-align: center;
     color: #61dafb;
-    font-size: 28px; /* Mărește mărimea fontului */
+    font-size: 28px;
 }
 
 nav {
@@ -36,7 +36,7 @@ a {
     text-decoration: none;
     color: #fff;
     padding: 10px;
-    font-size: 18px; /* Mărește mărimea fontului pentru butoane */
+    font-size: 18px;
     transition: color 0.3s ease;
 }
 
@@ -54,7 +54,7 @@ a:hover {
     padding: 10px;
     border: none;
     cursor: pointer;
-    font-size: 18px; /* Mărește mărimea fontului pentru butonul More */
+    font-size: 18px;
 }
 
 .dropdown-content {
@@ -117,8 +117,8 @@ p {
     padding: 0;
     margin: 0;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Afiseaza cate 3 coloane pe rand */
-    gap: 20px; /* Adauga spatiu intre coloane si randuri */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
 #news li {
@@ -126,6 +126,39 @@ p {
     padding: 10px;
     margin: 0;
 }
+
+
+
+#messages {
+    background-color: #292929;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#messages h2 {
+    color: #61dafb;
+    text-align: center;
+    font-size: 24px;
+}
+
+#messages ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+#messages li {
+    border-bottom: 1px solid #444;
+    padding: 10px;
+    margin: 0;
+}
+
 
 #evenimente {
     background-color: #292929;
@@ -147,8 +180,8 @@ p {
     padding: 0;
     margin: 0;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Afiseaza cate 3 coloane pe rand */
-    gap: 20px; /* Adauga spatiu intre coloane si randuri */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
 #evenimente li {
@@ -159,68 +192,68 @@ p {
 
 
 #despre {
-    background-color: #222; /* Culoarea de fundal pentru secțiune */
-    padding: 30px; /* Spațierea între conținut și marginea chenarului */
-    margin: 20px auto; /* Spațierea între chenar și alte elemente */
-    max-width: 800px; /* Lățimea maximă a chenarului */
-    border-radius: 10px; /* Colțuri rotunjite pentru chenar */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Ușoară umbră pentru efect vizual */
+    background-color: #222;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
 #gdpr {
-    background-color: #222; /* Culoarea de fundal pentru secțiune */
-    padding: 30px; /* Spațierea între conținut și marginea chenarului */
-    margin: 20px auto; /* Spațierea între chenar și alte elemente */
-    max-width: 800px; /* Lățimea maximă a chenarului */
-    border-radius: 10px; /* Colțuri rotunjite pentru chenar */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Ușoară umbră pentru efect vizual */
+    background-color: #222;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
 #despre h2 {
-    color: #61dafb; /* Culoarea titlului */
+    color: #61dafb;
 }
 
 #gdpr h2 {
-    color: #61dafb; /* Culoarea titlului */
+    color: #61dafb;
 }
 
 #despre p {
-    color: #fff; /* Culoarea textului */
+    color: #fff;
     font-size: 18px;
     line-height: 1.6;
-    margin-bottom: 20px; /* Spațiere între text și butonul "Vezi mai multe" */
+    margin-bottom: 20px;
 }
 
 #gdpr p {
-    color: #fff; /* Culoarea textului */
+    color: #fff;
     font-size: 18px;
     line-height: 1.6;
-    margin-bottom: 20px; /* Spațiere între text și butonul "Vezi mai multe" */
+    margin-bottom: 20px;
 }
 
 #contact p {
-    color: #fff; /* Culoarea textului */
+    color: #fff;
     font-size: 18px;
     line-height: 1.6;
-    margin-bottom: 20px; /* Spațiere între text și butonul "Vezi mai multe" */
+    margin-bottom: 20px;
 }
 
 .btn-vezi-mai-multe {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #61dafb; /* Culoarea butonului */
-    color: #fff; /* Culoarea textului butonului */
+    background-color: #61dafb;
+    color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease; /* Tranzitie pentru efect vizual la hover */
+    transition: background-color 0.3s ease;
 }
 
 .btn-vezi-mai-multe:hover {
-    background-color: #4fa3d1; /* Culoarea butonului la hover */
+    background-color: #4fa3d1;
 }
 footer {
-    background-color: #333; /* Culoarea de fundal pentru footer */
-    color: #fff; /* Culoarea textului din footer */
+    background-color: #333;
+    color: #fff;
     text-align: right;
     padding: 10px;
     position: fixed;
@@ -229,12 +262,12 @@ footer {
 }
 
 #contact {
-    background-color: #222; /* Culoarea de fundal pentru secțiune */
-    padding: 30px; /* Spațierea între conținut și marginea chenarului */
-    margin: 20px auto; /* Spațierea între chenar și alte elemente */
-    max-width: 800px; /* Lățimea maximă a chenarului */
-    border-radius: 10px; /* Colțuri rotunjite pentru chenar */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Ușoară umbră pentru efect vizual */
+    background-color: #222;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
 #contact h2 {

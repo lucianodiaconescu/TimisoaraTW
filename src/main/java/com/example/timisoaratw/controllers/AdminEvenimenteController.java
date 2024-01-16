@@ -38,10 +38,10 @@ public class AdminEvenimenteController {
         } else if ("update".equals(action)) {
             if (evenimentToEdit != null) {
                 updateEvenimentInDatabase(evenimentToEdit.getNume(), nume, data, descriere);
-                evenimentToEdit = null; // Reset the evenimentToEdit after updating
+                evenimentToEdit = null;
             }
         } else {
-            // If evenimentToEdit is null, it means we are adding a new event
+
             saveEvenimentInDatabase(nume, data, descriere);
         }
 

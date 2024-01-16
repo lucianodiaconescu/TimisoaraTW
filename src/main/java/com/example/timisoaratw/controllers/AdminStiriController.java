@@ -38,10 +38,10 @@ public class AdminStiriController {
         } else if ("update".equals(action)) {
             if (stireToEdit != null) {
                 updateStireInDatabase(stireToEdit.getNume(), nume, data, descriere);
-                stireToEdit = null; // Reset the stireToEdit after updating
+                stireToEdit = null;
             }
         } else {
-            // If stireToEdit is null, it means we are adding a new news article
+
             saveStireInDatabase(nume, data, descriere);
         }
 

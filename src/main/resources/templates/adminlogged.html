@@ -17,6 +17,7 @@
         <li><a href="adminlogged">Acasa</a></li>
         <li><a href="adminstiri">Stiri</a></li>
         <li><a href="adminevenimente">Evenimente</a></li>
+        <li><a href="adminmesaje">Mesaje de la useri</a></li>
     </ul>
 </nav>
 
@@ -51,6 +52,22 @@
     <br>
     <a href="adminstiri" class="btn-vezi-mai-multe">Vezi toate știrile</a>
 </section>
+
+<section id="messages">
+    <h2>Ultimele Mesaje</h2>
+    <ul>
+        <th:block th:each="mesaj : ${mesaje}">
+            <li>
+                <strong th:text="${mesaj['nume']}"></strong>
+                <span th:text="${mesaj['email']}"></span>
+                <span th:text="${mesaj['mesaj']}"></span>
+            </li>
+        </th:block>
+    </ul>
+    <br>
+    <a href="adminmesaje" class="btn-vezi-mai-multe">Vezi toate mesajele</a>
+</section>
+
 
 </body>
 <a href="admin" class="btn-vezi-mai-multe">Delogheaza-te!</a>

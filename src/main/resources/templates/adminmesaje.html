@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timișoara - Capitală Culturală Europeană 2023</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+<header>
+    Timișoara - Capitală Culturală Europeană 2023 - Stiri
+</header>
+<nav>
+    <ul>
+        <li><a href="adminlogged">Acasa</a></li>
+        <li><a href="adminstiri">Stiri</a></li>
+        <li><a href="adminevenimente">Evenimente</a></li>
+        <li><a href="adminmesaje">Mesaje de la useri</a></li>
+    </ul>
+</nav>
+<h2>Mesaje:</h2>
+<table border="1">
+    <thead>
+    <tr>
+        <th>Nume</th>
+        <th>Email</th>
+        <th>Mesaj</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="mesaj : ${mesaje}">
+        <td th:text="${mesaj['nume']}"></td>
+        <td th:text="${mesaj['email']}"></td>
+        <td th:text="${mesaj['mesaj']}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

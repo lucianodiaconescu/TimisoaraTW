@@ -169,13 +169,13 @@ button[type="submit"]:hover {
 h2 {
     color: #61dafb;
     text-align: center;
-    font-size: 32px; /* Increase the font size */
-    margin-bottom: 20px; /* Add margin to improve spacing */
+    font-size: 32px;
+    margin-bottom: 20px;
 }
 
-/* Stylish button for adding events */
+
 .button-add {
-    background-color: #4CAF50; /* Green background color */
+    background-color: #4CAF50;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -185,7 +185,7 @@ h2 {
     transition: background-color 0.3s ease;
 }
 .button-add {
-    background-color: #61dafb; /* Blue background color similar to Editează button */
+    background-color: #61dafb;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -196,7 +196,7 @@ h2 {
 }
 
 .button-add:hover {
-    background-color: #4fa3d1; /* Darker blue on hover */
+    background-color: #4fa3d1;
 }
 
 @media screen and (max-width: 600px) {

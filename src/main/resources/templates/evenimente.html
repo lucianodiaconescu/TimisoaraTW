@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,22 +27,43 @@
         </li>
     </ul>
 </nav>
-<h2>Evenimente:</h2>
-<table border="1">
-    <thead>
-    <tr>
-        <th>Nume</th>
-        <th>Data</th>
-        <th>Descriere</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr th:each="eveniment : ${evenimente}">
-        <td th:text="${eveniment.nume}"></td>
-        <td th:text="${eveniment.data}"></td>
-        <td th:text="${eveniment.descriere}"></td>
-    </tr>
-    </tbody>
-</table>
+<div class="placeholder"></div>
+
+<form action="#" method="get">
+    <input type="text" id="nume" name="nume" th:value="${param.nume}" />
+
+    <table border="1">
+        <thead>
+        <tr>
+            <th>Nume</th>
+            <th>Data</th>
+            <th>Descriere</th>
+        </tr>
+        </thead>
+        <tbody id="evenimenteTableBody">
+        <tr th:each="eveniment : ${evenimente}">
+            <td th:text="${eveniment.nume}"></td>
+            <td th:text="${eveniment.data}"></td>
+            <td th:text="${eveniment.descriere}"></td>
+        </tr>
+        </tbody>
+    </table>
+</form>
+
+<script>
+    document.getElementById("nume").addEventListener("input", function () {
+        var searchValue = this.value.toLowerCase();
+        var rows = document.querySelectorAll("#evenimenteTableBody tr");
+        rows.forEach(function (row) {
+            var nameColumn = row.querySelector("td:first-child").innerText.toLowerCase();
+            if (nameColumn.includes(searchValue)) {
+                row.style.display = "";
+            } else {
+                row.style.display = "none";
+            }
+        });
+    });
+</script>
+
 </body>
 </html>

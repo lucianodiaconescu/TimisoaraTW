@@ -27,6 +27,10 @@ h1, h2, h3, h4, h5, h6, p, a, li, span {
 
 header {
     background-color: #ffd700;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
     padding: 15px;
     text-align: center;
     color: #fff;
@@ -36,6 +40,10 @@ header {
 
 nav {
     background-color: #ffd700;
+    position: fixed;
+    left: 0;
+    top: 72px;
+    width: 100vw;
     padding: 5px 0;
     display: flex;
     justify-content: space-around;
@@ -46,6 +54,9 @@ nav {
     padding-right: 30%;
 }
 
+.placeholder{
+    height: 150px;
+}
 
 ul {
     list-style: none;
@@ -163,7 +174,7 @@ p {
 
 @media screen and (max-width: 600px) {
     nav {
-        flex-direction: row; /* Schimbarea la orientarea orizontală */
+        flex-direction: row;
         justify-content: space-around;
     }
 
@@ -207,13 +218,13 @@ th, td {
 
 
 #news {
-    background-color: #fff; /* Alb */
+    background-color: #fff;
     padding: 20px;
     margin: 20px auto;
     max-width: 800px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease; /* Efect de tranziție la schimbarea culorii de fundal */
+    transition: background-color 0.3s ease;
 }
 
 #news:hover {
@@ -406,12 +417,12 @@ th, td {
 }
 
 #gdpr {
-    background-color: #fff; /* Alb */
-    padding: 20px; /* Spațierea între conținut și marginea chenarului */
-    margin: 20px auto; /* Spațierea între chenar și alte elemente */
-    max-width: 800px; /* Lățimea maximă a chenarului */
-    border-radius: 8px; /* Colțuri rotunjite pentru chenar */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ușoară umbră pentru efect vizual */
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 #gdpr h2 {
@@ -431,12 +442,12 @@ th, td {
     color: #000000; /* Culoarea textului butonului */
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease; /* Tranzitie pentru efect vizual la hover */
+    transition: background-color 0.3s ease;
 }
 
 footer {
-    background-color: #333; /* Culoarea de fundal pentru footer */
-    color: #fff; /* Culoarea textului din footer */
+    background-color: #333;
+    color: #fff;
     text-align: right;
     padding: 10px;
     position: fixed;
@@ -482,7 +493,7 @@ footer {
     color: #333;
     font-size: 18px;
     line-height: 1.6;
-    margin-bottom: 20px; /* Spațiere între text și butonul "Vezi mai multe" */
+    margin-bottom: 20px;
 }
 
 #contact button {
@@ -498,50 +509,195 @@ footer {
     background-color: #4fa3d1;
 }
 
-#chat {
-    text-align: center;
-    padding: 20px;
-    background-color: #f5f5f5;
+
+
+
+table {
+    width: 90%;
+    margin: 0 5%;
+    text-align: left;
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+span {
+    color: black;
+}
+
+
+
+thead th, tbody td {
+    padding: 15px;
+}
+
+thead th {
+    background-color: #ffd700;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 2px solid #ddd;
+}
+
+tbody td {
+    background-color: transparent;
+    color: #333;
+    transition: all 0.2s linear;
+}
+
+tbody tr:hover td {
+    background-color: #ffd700;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+td {
+    transition: transform 0.4s;
+}
+
+tbody tr:hover td {
+    transform: scale(1.05);
+}
+
+
+form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+label {
+    font-size: 16px;
+    margin-right: 10px;
+    color: #333;
+}
+
+#nume {
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+
+#evenimenteTableBody tr {
+    transition: background-color 0.3s;
+}
+
+#evenimenteTableBody tr:hover {
+    background-color: #f5f5f5;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+#searchBar {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+table {
+    width: 80%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+#chat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to right, #29293a, #536976);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #chat h2 {
-    color: #333;
-    font-size: 24px;
+    color: #66c2ff;
+    font-size: 28px;
     margin-bottom: 20px;
 }
 
 #question {
-    padding: 10px;
+    padding: 15px;
     width: 60%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+    border: 2px solid #66c2ff;
+    border-radius: 8px;
+    font-size: 18px;
+    outline: none;
+    background: #373742;
+    color: #fff;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.askgpt{
-    padding: 10px 20px;
-    background-color: #4caf50;
+#question:focus {
+    border-color: #45a049;
+    box-shadow: 0 0 10px rgba(69, 160, 73, 0.5);
+}
+
+.askgpt {
+    padding: 15px 30px;
+    background: linear-gradient(to right, #66c2ff, #4eadeb);
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
+    transition: background 0.3s ease;
 }
 
-button:hover {
-    background-color: #45a049;
+.askgpt:hover {
+    background: linear-gradient(to right, #4eadeb, #66c2ff);
 }
 
 #answer {
-    margin-top: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fff;
-    font-size: 18px;
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 15px;
+    border: 2px solid #66c2ff;
+    border-radius: 8px;
+    background: #373742;
+    font-size: 20px;
+    max-width: 100%;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
 }

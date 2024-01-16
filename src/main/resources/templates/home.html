@@ -29,9 +29,9 @@
         </li>
     </ul>
 </nav>
+<div class="placeholder"></div>
 
 <h1>Bine ați venit în orașul care strălucește cultural!</h1>
-<p>Descoperiți evenimente, artă și istorie într-un cadru inedit.</p>
 
 <section id="evenimente">
     <h2>Ultimele Evenimente</h2>
@@ -71,21 +71,19 @@
     <a href="stiri" class="btn-vezi-mai-multe">Vezi toate știrile</a>
 </section>
 <section id="chat">
-    <h2>Chat cu OpenAI</h2>
+    <h2>Pune o intrebare:</h2>
     <input type="text" id="question" placeholder="Introdu o întrebare...">
     <button class ="askgpt" onclick="askQuestion()">Trimite întrebarea</button>
+    <br>
     <div id="answer"></div>
 </section>
 <script>
     function askQuestion() {
         var prompt = $("#question").val();
-
-        // Modificarea aici pentru a potrivi formatul dorit
         var requestBody = {
             model: "text-davinci-002",
             messages: [{ role: 'system', content: prompt }],
         };
-
         $.ajax({
             type: "POST",
             url: "/chat",
@@ -104,7 +102,7 @@
 
 
 </body>
-<br>
+<br><br><br><br>
 <footer>Timisoara Capitala Cultural Europeana 2023</footer>
 
 </html>

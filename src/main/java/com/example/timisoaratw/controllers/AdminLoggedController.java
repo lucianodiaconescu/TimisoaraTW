@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 @Controller
 public class AdminLoggedController {
@@ -54,9 +55,28 @@ public class AdminLoggedController {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        List<Map<String, Object>> mesaje = new ArrayList<>();
+        try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD)) {
+            String sql = "SELECT nume, email, mesaj FROM timisoaramesaje";
+            try (PreparedStatement statement = connection.prepareStatement(sql)) {
+                try (ResultSet resultSet = statement.executeQuery()) {
+                    while (resultSet.next()) {
+                        Map<String, Object> mesaj = Map.of(
+                                "nume", resultSet.getString("nume"),
+                                "email", resultSet.getString("email"),
+                                "mesaj", resultSet.getString("mesaj")
+                        );
+                        mesaje.add(mesaj);
+                    }
+                }
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
 
         model.addAttribute("stiri", stiri);
         model.addAttribute("evenimente", evenimente);
+        model.addAttribute("mesaje", mesaje);
         return "adminlogged";
     }
 }

@@ -44,7 +44,7 @@ public class AdminController {
                 }
             }
         } catch (SQLException e) {
-            // Tratează excepțiile de conexiune la bază de date
+
             e.printStackTrace();
             model.addAttribute("error", "Eroare la conectarea la bază de date.");
             return "admin";

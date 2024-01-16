@@ -2,6 +2,7 @@
     
     import com.example.timisoaratw.models.Eveniment;
     import com.example.timisoaratw.models.Stire;
+
     import com.fasterxml.jackson.databind.ObjectMapper;
     import org.springframework.stereotype.Controller;
     import org.springframework.ui.Model;
@@ -82,7 +83,6 @@
                 String openaiEndpoint = "https://api.openai.com/v1/chat/completions";
                 HttpClient client = HttpClient.newHttpClient();
 
-                // Construim obiectul JSON utilizând Jackson
                 ObjectMapper objectMapper = new ObjectMapper();
                 Map<String, Object> requestBodyMap = Map.of(
                         "model", "gpt-3.5-turbo",

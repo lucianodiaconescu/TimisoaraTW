@@ -31,7 +31,7 @@
         private static final String DB_URL = "jdbc:oracle:thin:@localhost:1521:xe";
         private static final String DB_USER = "SYSTEM";
         private static final String DB_PASSWORD = "db";
-        private static final String OPENAI_API_KEY = "";
+        private static final String OPENAI_API_KEY = "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";
 
 
         @GetMapping("/")
